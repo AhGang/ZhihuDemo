@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string-array name="Data">
+
+       <item>广州</item>
+       <item>珠海</item>
+       <item>北京</item>
+       <item>成都</item>
+       <item>潮州</item>
+       <item>绵阳</item>
+       <item>深圳</item>
+       <item>海丰</item>
+
+
+
+   </string-array>
+
+</resources>

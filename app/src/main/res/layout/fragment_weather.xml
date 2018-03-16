@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/Blue"
+    >
+ <LinearLayout
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal">
+  <TextView
+      android:id="@+id/text"
+      android:text="请选择你所在的城市："
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+
+      android:textSize="20sp"
+      android:textColor="@color/Black"
+      android:layout_margin="1sp"/>
+  <Spinner
+      android:id="@+id/spinner"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:entries="@array/Data">
+  </Spinner>
+ </LinearLayout>
+
+
+   <TextView
+       android:id="@+id/Cityname"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textColor="@color/white"
+       android:text="城市："
+       android:textSize="30sp"/>
+
+ <ImageView
+     android:id="@+id/weatherimg"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_gravity="center"
+     android:src="@drawable/sun" />
+
+ <LinearLayout
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal"
+     android:layout_gravity="center">
+  <TextView
+      android:id="@+id/tem"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:textColor="@color/white"
+      android:text="温度："
+      android:textSize="30sp"/>
+  <TextView
+      android:id="@+id/time"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@color/white"
+      android:text="时间："
+      android:textSize="20sp" />
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+
+  </LinearLayout>
+ </LinearLayout>
+
+
+
+   <TextView
+       android:id="@+id/humidity"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:textColor="@color/white"
+       android:text="湿度："
+       android:textSize="30sp" />
+   <TextView
+       android:id="@+id/Sunrise"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:textColor="@color/white"
+       android:text="日出："
+       android:textSize="30sp" />
+   <TextView
+       android:id="@+id/Sunset"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:textColor="@color/white"
+       android:text="日落："
+       android:textSize="30sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/weather_view"
+        />
+
+
+
+</LinearLayout>
